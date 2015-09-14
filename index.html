@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>微信弹幕火狐版</title>
+  <title>微信弹幕插件</title>
   <meta name="description" content="将网页版微信的消息即时显示在任意标签页上">
   <meta name="keywords" content="微信, 弹幕">
 
@@ -30,6 +30,7 @@
   <meta name="msapplication-TileImage" content="assets/images/icon.png">
   <meta name="msapplication-TileColor" content="#c8c8c8">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.3.0/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/index.css">
 
@@ -53,14 +54,18 @@
         <a class="am-btn am-btn-success am-btn-xs" href="helper.html">弹幕助手 <span class="am-icon-angle-double-up"></span></a>
         <a class="am-btn am-btn-danger am-btn-xs" href="feature.html">特色简介 <span class="am-icon-angle-double-up"></span></a>
       </p>
-      <h1>微信弹幕 Firefox 版</h1>
+      <h1>微信弹幕插件</h1>
       <p>将网页版微信的消息显示在任意页面上</p>
       <p class="banner-btnbox">
-        <a class="am-btn am-btn-secondary am-round" href="http://aidistan.github.io/firefox-weixin-danmu/weixin-danmu.xpi">直接安装</a>
-        <a class="am-btn am-btn-default am-round" href="https://github.com/aidistan/firefox-weixin-danmu" target="_blank" style="padding: 8px 10px;">
+        <a class="am-btn am-btn-warning am-round" href="https://addons.mozilla.org/zh-CN/firefox/addon/weixin-danmu/" target="_blank">
+          <i class="fa fa-firefox"></i> <strong>Firefox</strong>
+        </a>
+        <a class="am-btn am-btn-default am-round" href="https://github.com/aidistan/browser-weixin-danmu" target="_blank" style="padding: 8px 10px;">
           <span class="am-icon am-icon-github am-icon-sm"></span>
         </a>
-        <a class="am-btn am-btn-warning am-round" href="https://addons.mozilla.org/zh-CN/firefox/addon/weixin-danmu/" target="_blank">火狐商店</a>
+        <a class="am-btn am-btn-secondary am-round" href="http://aidistan.github.io/chrome-weixin-danmu/weixin-danmu.zip" target="_blank">
+          <i class="fa fa-chrome"></i> <strong>Chrome</strong>
+        </a>
       </p>
 
       <nav class="scrollspy-nav" data-am-sticky>
@@ -75,10 +80,17 @@
     </div>
 
     <h2 id="get-started">安装插件</h2>
-    <h3>基本步骤</h3>
+    <ul>
+      <li><i class="fa fa-firefox"> Firefox 浏览器</i>：从<a href="https://addons.mozilla.org/zh-CN/firefox/addon/weixin-danmu/">火狐扩展商店</a>或 <a href="http://aidistan.github.io/firefox-weixin-danmu/weixin-danmu.xpi">Github</a> 直接下载安装</li>
+      <li><i class="fa fa-chrome"> Chrome 浏览器</i>：从 Github 下载<a href="http://aidistan.github.io/chrome-weixin-danmu/weixin-danmu.zip">压缩包</a>后拖入扩展页安装</li>
+    </ul>
+    <blockquote>
+      即将支持 <i class="fa fa-internet-explorer"> Edge 浏览器</i>，敬请期待！
+    </blockquote>
+    <h3>基本使用</h3>
     <ol>
-      <li>从<a href="https://addons.mozilla.org/zh-CN/firefox/addon/weixin-danmu/">火狐扩展商店</a>或<a href="http://aidistan.github.io/firefox-weixin-danmu/weixin-danmu.xpi">Github</a>安装此插件</li>
-      <li>在火狐浏览器的任意一个标签页中登陆网页版微信</li>
+      <li>安装插件</li>
+      <li>在浏览器的任意一个标签页中登陆网页版微信</li>
       <li>打开要捕获消息的群或好友的对话框</li>
       <li>切换到要显示弹幕的任意一个网页</li>
       <li>在手机微信上向所选的好友或群发消息</li>
@@ -91,7 +103,7 @@
       <li>打开对话框后按钮会自动点亮，点击按钮将打开弹幕助手页面</li>
     </ul>
     <h4>修改默认设置</h4>
-    <p>打开附加组件页面 (<code>Ctrl + Shift + A</code>)，点击微信弹幕的设置按钮进入附加组件详情页面，从中可以：</p>
+    <p>打开浏览器插件页 ( <i class="fa fa-firefox"></i> <code>Ctrl + Shift + A</code>，<i class="fa fa-chrome"></i> 木有快捷键)，点击微信弹幕的设置按钮进入附加组件详情页面，从中可以：</p>
     <ul>
       <li>开启/关闭显示所有消息</li>
       <li>调整弹幕的默认大小</li>
@@ -157,7 +169,7 @@
 
     <p id="faq_similar_softwares">
       <b>问：我就是觉得这个插件不给力，有什么类似软件可以推荐？</b><br/>
-      答：微信弹幕火狐版的安装和使用都非常容易，如果实在不能满足你的需求，还可以考虑：
+      答：微信弹幕插件的安装和使用都非常容易，如果实在不能满足你的需求，还可以考虑：
       <table class="am-table am-table-striped">
         <thead>
           <tr><th>名称</th><th>优点</th><th>缺点</th></tr>
@@ -187,13 +199,11 @@
     <h2 id="more-info">更多信息</h2>
     <h3>致谢</h3>
     <p>本插件深受 <a href="https://github.com/Integ/WeShoot">WeShoot</a> 启发，特此感谢！</p>
-    <h3>历史版本</h3>
+    <h3>变更历史</h3>
     <ul>
-      <li><a href="weixin-danmu-2.0.0.xpi">v2.0.0 (20150625)</a>: 兼容新版网页微信</li>
-      <li><a href="weixin-danmu-2.0.1.xpi">v2.0.1 (20150913)</a>: 修复部分 bug</li>
-      <li><a href="weixin-danmu-2.0.1.xpi">v2.0.2 (20150914)</a>: 修复已知问题</li>
+      <li><a href="https://github.com/aidistan/firefox-weixin-danmu/blob/master/HISTORY.md" target="_blank">微信弹幕 Firefox 版</a></li>
+      <li><a href="https://github.com/aidistan/chrome-weixin-danmu/blob/master/HISTORY.md" target="_blank">微信弹幕 Chrome 版</a></li>
     </ul>
-    <p>查看<a href="https://github.com/aidistan/firefox-weixin-danmu/blob/master/HISTORY.md" target="_blank">变更历史</a>以了解更多。</p>
     <h3>联系方式</h3>
     <p>欢迎联系我以告知使用中遇到的不便和问题，方式按推荐程度从高至低排序：</p>
     <ul>
@@ -218,7 +228,7 @@
     <footer class="am-footer am-footer-default">
       <div class="am-footer-miscs">
         <p>Developed by <a href="https://github.com/aidistan/" target="_blank" >Aidi Stan</a>.</p>
-        <p>CopyRight &copy; 2015 <a href="http://adome.aidistan.net/" target="_blank">Aidi Stan</a>. Licensed under <a href="https://github.com/aidistan/firefox-weixin-danmu/blob/master/LICENSE" target="_blank">the MIT license</a>.</p>
+        <p>CopyRight &copy; 2015 <a href="http://adome.aidistan.net/" target="_blank">Aidi Stan</a>. Licensed under the MIT license.</p>
       </div>
     </footer>
   </div>
