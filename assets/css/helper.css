@@ -1,0 +1,34 @@
+/* Reset */
+.slide:after { display: none; }
+
+/* Global */
+small { font-size: 0.8em; }
+
+.droparea {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.droparea-mask {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border: dashed 5px #ccc;
+  background-size: contain;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.droparea-mask:-moz-drag-over {
+  background-color: rgba(0, 0, 0, 0.1);;
+}
+
+.droparea-desc {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  color: #666;
+  top: 231px;
+}

@@ -1,0 +1,84 @@
+.am-container { max-width: 640px; }
+h1 { font-size: 2.50em; margin-top: 1.00em; }
+h2 { font-size: 2.00em; margin-top: 1.00em; }
+h3 { font-size: 1.50em; margin-top: 0.50em; }
+h4 { font-size: 1.25em; margin-top: 0.25em; }
+
+@media screen and (max-width: 450px) {
+  h1 { font-size: 2.00em; margin-top: 1.00em; }
+  h2 { font-size: 1.50em; margin-top: 0.50em; }
+  h3 { font-size: 1.25em; margin-top: 0.25em; }
+  h4 { font-size: 1.00em; margin-top: 0.00em; }
+}
+
+.banner { text-align: center; margin-bottom: 50px; }
+.banner-btnbox { margin-bottom: 30px; }
+
+.scrollspy-nav {
+  width:100%;
+  padding:0;
+  background:#fff;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.scrollspy-nav ul { margin: 0; padding: 0; }
+.scrollspy-nav li { display: inline-block; list-style: none; }
+.scrollspy-nav a { color:#777; padding:10px 20px; display:inline-block; margin-bottom: 3px; }
+.scrollspy-nav a.am-active { color: #333; font-weight: 700; margin-bottom: 0; border-bottom: 3px solid #0F9AE0; }
+
+@media screen and (max-width: 385px) {
+  .scrollspy-nav a { padding:10px 10px; }
+}
+
+.ctl-color {
+  display: inline-block;
+  padding: 10px 13px;
+  color: white;
+  font-weight: bold;
+}
+
+.ctl-other {
+  display: inline-block;
+  padding: 9px 12px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+#demo-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100;
+  height: 270px;
+  border: 1px solid black;
+}
+
+.demo-bullet {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.demo-lead {
+  color: #c8c8c8;
+}
+
+#demo-bullet1 {
+  color: #333333;
+  font-size: 24px;
+  top: 100px;
+}
+
+#demo-bullet2 {
+  color: #ea428a;
+  font-size: 12px;
+  bottom: 0px;
+}
+
+.ds-waiting:after { content: '正在载入多说评论插件...'; }
+
+.am-footer-default .am-footer-miscs p {
+  display: block;
+  margin: 0;
+}

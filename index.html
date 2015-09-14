@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>微信弹幕火狐版</title>
+  <meta name="description" content="将网页版微信的消息即时显示在任意标签页上">
+  <meta name="keywords" content="微信, 弹幕">
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/images/icon.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/images/icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/images/icon.png">
+  <meta name="msapplication-TileColor" content="#c8c8c8">
+
+  <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.3.0/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.amazeui.org/amazeui/2.3.0/js/amazeui.min.js"></script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?cd7464e7917842a708c6a4e085660a87";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+<body id="top">
+  <div class="am-container">
+    <div class="banner">
+      <p class="am-text-right">
+        <a class="am-btn am-btn-success am-btn-xs" href="helper.html">弹幕助手 <span class="am-icon-angle-double-up"></span></a>
+        <a class="am-btn am-btn-danger am-btn-xs" href="feature.html">特色简介 <span class="am-icon-angle-double-up"></span></a>
+      </p>
+      <h1>微信弹幕 Firefox 版</h1>
+      <p>将网页版微信的消息显示在任意页面上</p>
+      <p class="banner-btnbox">
+        <a class="am-btn am-btn-secondary am-round" href="http://aidistan.github.io/firefox-weixin-danmu/weixin-danmu.xpi">直接安装</a>
+        <a class="am-btn am-btn-default am-round" href="https://github.com/aidistan/firefox-weixin-danmu" target="_blank" style="padding: 8px 10px;">
+          <span class="am-icon am-icon-github am-icon-sm"></span>
+        </a>
+        <a class="am-btn am-btn-warning am-round" href="https://addons.mozilla.org/zh-CN/firefox/addon/weixin-danmu/" target="_blank">火狐商店</a>
+      </p>
+
+      <nav class="scrollspy-nav" data-am-sticky>
+        <ul class="am-text-center">
+          <li><a href="#top" style="padding: 5px 10px;"><img src="assets/images/icon.png" width=36 height=36></a></li>
+          <li><a href="#get-started">安装</a></li>
+          <li><a href="#shoot-bullet">发射</a></li>
+          <li><a href="#faq">问答</a></li>
+          <li><a href="#more-info">更多</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h2 id="get-started">安装插件</h2>
+    <h3>基本步骤</h3>
+    <ol>
+      <li>从<a href="https://addons.mozilla.org/zh-CN/firefox/addon/weixin-danmu/">火狐扩展商店</a>或<a href="http://aidistan.github.io/firefox-weixin-danmu/weixin-danmu.xpi">Github</a>安装此插件</li>
+      <li>在火狐浏览器的任意一个标签页中登陆网页版微信</li>
+      <li>打开要捕获消息的群或好友的对话框</li>
+      <li>切换到要显示弹幕的任意一个网页</li>
+      <li>在手机微信上向所选的好友或群发消息</li>
+      <li>弹幕出现！</li>
+    </ol>
+    <h3>详细说明</h3>
+    <h4>使用工具栏按钮</h4>
+    <ul>
+      <li>未侦测到对话框时按钮呈灰色，点击按钮将打开网页微信页面</li>
+      <li>打开对话框后按钮会自动点亮，点击按钮将打开弹幕助手页面</li>
+    </ul>
+    <h4>修改默认设置</h4>
+    <p>打开附加组件页面 (<code>Ctrl + Shift + A</code>)，点击微信弹幕的设置按钮进入附加组件详情页面，从中可以：</p>
+    <ul>
+      <li>开启/关闭显示所有消息</li>
+      <li>调整弹幕的默认大小</li>
+      <li>开启/关闭好友昵称显示</li>
+      <li>开启/关闭微信标签固定</li>
+      <li>开启/关闭消息通知显示</li>
+      <li>开启/关闭弹幕测试模式</li>
+    </ul>
+    <blockquote>
+      通过配置是否“显示所有消息”，微信弹幕即可以在团体活动中使用固定群聊作为弹幕源而不会播出私人消息，也可以在自己上网时监听来自所有人的微信消息了呢～
+      <img src="http://cdn.bootcss.com/twemoji/1.2.0/svg/1f609.svg" height="24">
+    </blockquote>
+
+    <h2 id="shoot-bullet">发射弹幕</h2>
+    <p>微信发送的任意文字、表情、图片，默认会以固定大小、随机颜色、随机位置显示在屏幕上。（部分表情在网页微信上不会显示，因此无法做成弹幕）</p>
+    <p>目前支持自定义弹幕的颜色、大小和位置，格式为<code>：字</code>，具体说明如下：</p>
+    <ul>
+      <li>冒号同时支持中文全角符号和英文半角符号</li>
+      <li>冒号和魔力字符（效果示意中的灰色部分）不会显示在弹幕中</li>
+      <li>属性可以按照任意顺序设置，但必须放在消息的开头</li>
+      <li>设置字幕大小的效果可以叠加，即“:大:大:大”的效果是":大"的三倍（但大小有上下限）</li>
+    </ul>
+    <h3>魔力字符</h3>
+    <div class="ctl-color" style="background: #00aeef">蓝</div>
+    <div class="ctl-color" style="background: #ea428a">红</div>
+    <div class="ctl-color" style="background: #eed500">黄</div>
+    <div class="ctl-color" style="background: #f5a70d">橙</div>
+    <div class="ctl-color" style="background: #8bcb30">绿</div>
+    <div class="ctl-color" style="background: #9962c1">紫</div>
+    <div class="ctl-color" style="background: #333333">黑</div>
+    <div class="ctl-color" style="background: #eeeeee; color: #000000;">白</div>
+    <div class="ctl-other" style="font-size:20px;">大</div>
+    <div class="ctl-other" style="font-size:12px;">小</div>
+    <div class="ctl-other" style="padding-top: 0; padding-bottom: 18px;">顶</div>
+    <div class="ctl-other" style="padding-top: 18px; padding-bottom: 0;">底</div>
+    <h3>效果示意</h3>
+    <div id="demo-container">
+      <p id="demo-bullet1" class="demo-bullet"><span class="demo-lead">:大:黑</span>Valar Morghulis</p>
+      <p id="demo-bullet2" class="demo-bullet"><span class="demo-lead">:红:底:小</span>Valar Dohaeris</p>
+    </div>
+
+    <h2 id="faq">常见问题</h2>
+    <p id="faq_application">
+      <b>问：只能在浏览器的标签页上显示弹幕，有什么用途？</b><br/>
+      答：随着浏览器功能的逐步增强，浏览器版的弹幕已可以满足绝大多数的需求：
+      <ul>
+        <li><b>传统幻灯片</b>可以导出PDF，用浏览器直接播放</li>
+        <li>推荐使用<b>网页幻灯片</b>，<a href="http://shwr.me/" target="_blank">Shower</a> 和 <a href="http://imakewebthings.com/deck.js/" target="_blank">deck.js</a> 都是不错的引擎</li>
+        <li>HTML5已原生支持<b>视频</b>的播放，可用<code>vidio</code>标签把视频嵌在网页里，也可直接把文件拖进浏览器播放。建议使用MP4格式，转码可以用<a href="http://mediacoder.com.cn/" target="_blank">MediaCoder</a>，最好用的开源转码软件，没有之一（全屏问题请<a href="#faq_video_fullscreen">移步至此</a>）</li>
+        <li>什么！你问<b>音频</b>怎么办？……别闹了</li>
+      </ul>
+      如果你有特殊需求，自己尝试使用但未成功，请在<a href="#comments">讨论区</a>中详细说明情况，我会尽量帮忙。
+    </p>
+
+    <p id="faq_video_fullscreen">
+      <b>问：视频一全屏，弹幕就不见了，怎么破？</b><br/>
+      答：受浏览器和技术限制，弹幕无法支持HTML5视频和Flash视频的全屏功能。目前我暂时也不知道Flash视频怎么办，HTML5视频有替代的解决方案：
+      <ul>
+        <li>直接用浏览器播放：可以使用浏览器的全屏功能达到相同效果（请按<code>F11</code>）</li>
+        <li>视频嵌在网页里：请将<code>video</code>设置成合理的大小，其余同上</li>
+      </ul>
+    </p>
+
+    <p id="faq_similar_softwares">
+      <b>问：我就是觉得这个插件不给力，有什么类似软件可以推荐？</b><br/>
+      答：微信弹幕火狐版的安装和使用都非常容易，如果实在不能满足你的需求，还可以考虑：
+      <table class="am-table am-table-striped">
+        <thead>
+          <tr><th>名称</th><th>优点</th><th>缺点</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="https://github.com/Integ/WeShoot" target="_blank">WeShoot</a></td><td>Chrome浏览器插件</td><td>功能较弱</td></tr>
+          <tr><td><a href="https://github.com/bigeagle/danmaQ" target="_blank">gdanmaku</a></td><td>桌面版软件，可为公众号吸粉</td><td>使用复杂，需要配置服务器端和客户端</td></tr>
+          <tr><td><a href="https://www.vdanmu.com" target="_blank">微弹幕</a></td><td>桌面版软件，简单易用</td><td>不能完全支持图片和表情，必须关注微弹幕的公众号</td></tr>
+        </tbody>
+      </table>
+    </p>
+
+    <p id="faq_qq_emoji">
+      <b>问：QQ 表情的显示有点奇怪，怎么回事？</b><br/>
+      答：网页版微信内置的 QQ 表情像素过低... 建议改为使用 Emoji 表情。
+    </p>
+
+    <p id="faq_danmu_helper">
+      <b>问：弹幕助手是什么？怎么使用？</b><br/>
+      答：基于 <a href='http://shwr.me' target='_blank'><img src='http://shwr.me/pictures/logo.svg' height=19 style='padding-bottom:2px;' /> Shower</a> 制作的弹幕助手，在作为一个网页幻灯片示例的同时，还提供了群聊入口和使用帮助，是活动组织者的有力工具。
+      <ul>
+        <li>群聊入口二维码：需要活动组织者根据实际情况，将本地存储的群二维码图片直接拖进相应方框即可</li>
+        <li>使用帮助二维码：扫描后会跳转至当前页面的弹幕发射说明部分</li>
+      </ul>
+    </p>
+
+    <h2 id="more-info">更多信息</h2>
+    <h3>致谢</h3>
+    <p>本插件深受 <a href="https://github.com/Integ/WeShoot">WeShoot</a> 启发，特此感谢！</p>
+    <h3>历史版本</h3>
+    <ul>
+      <li><a href="weixin-danmu-2.0.0.xpi">v2.0.0 (20150625)</a>: 兼容新版网页微信</li>
+      <li><a href="weixin-danmu-2.0.1.xpi">v2.0.1 (20150913)</a>: 修复部分 bug</li>
+      <li><a href="weixin-danmu-2.0.1.xpi">v2.0.2 (20150914)</a>: 修复已知问题</li>
+    </ul>
+    <p>查看<a href="https://github.com/aidistan/firefox-weixin-danmu/blob/master/HISTORY.md" target="_blank">变更历史</a>以了解更多。</p>
+    <h3>联系方式</h3>
+    <p>欢迎联系我以告知使用中遇到的不便和问题，方式按推荐程度从高至低排序：</p>
+    <ul>
+      <li>留言：请前往下方的<a href="#comments">讨论区</a></li>
+      <li>电邮：<a href="mailto:aidistan@live.cn">aidistan@live.cn</a></li>
+      <li>微信：aidistan <small><a href="javascript: void(0)" data-am-modal="{target: '#modal-qr2aidistan', closeViaDimmer: 0, width: 250, height: 285}">(二维码链接)</a></small></li>
+      <div class="am-modal am-modal-no-btn" tabindex="-1" id="modal-qr2aidistan">
+        <div class="am-modal-dialog">
+          <div class="am-modal-hd">Aidi Stan
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+          </div>
+          <div class="am-modal-bd">
+            <img src="assets/images/qr2aidistan.jpg" class="am-img-responsive" alt="aidistan's qrcode" />
+          </div>
+        </div>
+      </div>
+    </ul>
+
+    <h3 id="comments">参与讨论</h3>
+    <div class="ds-thread" data-thread-key="post-20150129" data-title="微信弹幕火狐版上线啦！" data-url="http://adome.aidistan.net/2015/01/29/weixin-danmu/"></div>
+
+    <footer class="am-footer am-footer-default">
+      <div class="am-footer-miscs">
+        <p>Developed by <a href="https://github.com/aidistan/" target="_blank" >Aidi Stan</a>.</p>
+        <p>CopyRight &copy; 2015 <a href="http://adome.aidistan.net/" target="_blank">Aidi Stan</a>. Licensed under <a href="https://github.com/aidistan/firefox-weixin-danmu/blob/master/LICENSE" target="_blank">the MIT license</a>.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/index.js"></script>
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name: "adome"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+</body>
+</html>

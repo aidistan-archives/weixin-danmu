@@ -1,0 +1,23 @@
+.am-container { max-width: 800px; }
+
+h1 { font-size: 4em; margin-top: 2em; }
+p  { font-size: 1.25em }
+section { padding: 0 40px; }
+
+@media screen and (max-width: 800px) {
+  h1 { font-size: 2.5em; margin-top: 1em; }
+  p  { font-size: 1em }
+}
+
+@media screen and (max-width: 500px) {
+  h1 { font-size: 2em; margin-top: 1em; }
+  p  { font-size: 1em }
+  section { padding: 0 20px; }
+}
+
+body { color: #ffffff; font-weight: bold; overflow: hidden; cursor: default; }
+nav { bottom: 0; position: fixed; width: 100%; z-index: 2; }
+
+section{ text-align: center; }
+section:nth-child(odd)  div { text-align: left; }
+section:nth-child(even) div { text-align: right; }

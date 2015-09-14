@@ -1,0 +1,4 @@
+node_modules
+
+# Remove .DS_Store for Mac
+.DS_Store
