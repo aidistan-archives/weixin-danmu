@@ -8,8 +8,12 @@ http://aidistan.github.io/browser-weixin-danmu
 
 ## 分支项目
 
-- 已经支持
-  - Firefox: https://github.com/aidistan/firefox-weixin-danmu
-  - Chrome: https://github.com/aidistan/chrome-weixin-danmu
-- 即将支持
-  - Edge
+- **Firefox** : https://github.com/aidistan/firefox-weixin-danmu
+- **Chrome** :
+https://github.com/aidistan/chrome-weixin-danmu
+
+> 等微软 Edge 应用市场上线后，将以 Chrome 插件方式支持
+
+## 许可协议
+
+Copyright (c) 2015 Aidi Stan under [the MIT License](https://github.com/aidistan/browser-weixin-danmu/blob/gh-pages/LICENSE)
