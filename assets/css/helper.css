@@ -32,3 +32,9 @@ small { font-size: 0.8em; }
   color: #666;
   top: 231px;
 }
+
+/* Specific */
+#thanks .note {
+  position: absolute;
+  bottom: 0;
+}
