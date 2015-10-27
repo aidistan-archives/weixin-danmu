@@ -14,6 +14,10 @@
 - 弹幕插件的通用问题，如功能需求，请提交至本项目；
 - 针对浏览器的特定问题，请提交至相应的分支项目中。
 
+## 特别致谢
+
+本插件深受 [WeShoot](https://github.com/Integ/WeShoot) 启发，特此感谢！
+
 ## 许可协议
 
 Copyright (c) 2015 Aidi Stan under [the MIT License](https://github.com/aidistan/browser-weixin-danmu/blob/gh-pages/LICENSE)
