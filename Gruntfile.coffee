@@ -13,7 +13,7 @@ module.exports = (grunt) ->
       server:
         options:
           livereload: true
-          port: 4000
+          port: 8080
           base: '.'
 
   grunt.registerTask 'default', ['connect', 'watch']
