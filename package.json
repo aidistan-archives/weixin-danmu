@@ -1,8 +1,7 @@
 {
   "scripts": {
     "postinstall": "npm install -g grunt-cli",
-    "dev": "grunt",
-    "start": "grunt"
+    "dev": "grunt"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
